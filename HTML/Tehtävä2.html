@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                border: 2px solid blue;
+            }
+
+            .about-btn {
+                background-color: #B0E0E6;
+                border: 1px groove #808080;
+                position: absolute;
+                width: 100%;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                overflow: hidden;
+            }
+
+            .second-about {
+                display: none;
+            }
+
+            .second-about-btn {
+                background-color: #B0E0E6;
+                border: 1px groove #808080;
+                position: relative;
+                width: 100%;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                overflow: hidden;
+            }
+
+            .second-about-content {
+                text-decoration: none;
+                color: #000000;
+                margin-left: 10px;
+                float: right;
+                margin-right: 10px;
+            }
+
+            .about-content {
+                display: none;
+            }
+
+            .about {
+                position: relative;
+                display: block;
+            }
+
+            .arrow {
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                padding: 3px;
+                margin-right: 10px;
+                float: right;
+                margin-top: 2px;
+            }
+
+            .down {
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+            }
+
+            .about-content a {
+                text-decoration: none;
+                color: #000000;
+                padding: 20px;
+                display: inline-block;
+                margin-top: 20px;
+            }
+
+            .about-content a:hover {
+                text-decoration: underline;
+            }
+
+            .about:hover .about-content {
+                display: block;
+                background-color: #B0E0E6;
+            }
+
+            .gradient {
+                background: rgb(2,0,36);
+                background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(78,79,156,1) 56%);
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            .header {
+                color: #B0E0E6;
+                text-align: center;
+            }
+
+            .nav-button {
+                border: none;
+                color: #FFFFFF;
+                background-color: #000000;
+                font-size: 1.2em;
+                margin-top: 5px;
+            }
+
+            .nav-content {
+                display: none;
+            }
+
+            .nav-content a {
+                text-decoration: none;
+                color: #FFFFFF;
+                background-color: #000000;
+                display: block;
+                margin-left: 20px;
+                font-size: 1.2em;
+            }
+
+            .nav-content a:hover {
+                text-decoration: underline;
+            }
+
+            .nav-item:hover .nav-content {
+                display: block;
+                background-color: #000000;
+                color: #FFFFFF;
+            }
+
+            .nav-item {
+                background-color: black;
+                float: none;
+            }
+
+            .first-lorem {
+                margin-left: 10px;
+            }
+
+            .first-lorem-div {
+                border-bottom: 2px solid blue;
+                float: none;
+            }
+
+            .second-lorem {
+                margin-left: 10px;
+            }
+
+            .second-lorem-div {
+                overflow: auto;
+            }
+
+            .lorems {
+                overflow: auto;
+            }
+
+            footer {
+                background-color: #000000;
+                color: #FFFF;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                text-align: center;
+            }
+
+            .link-title {
+                color: #B0E0E6;
+                background-color: blue;
+                padding-left: 10px;
+                padding-right: none;
+                padding-top: none;
+                padding-bottom: none;
+            }
+
+            .link-sections {
+                background-color: #B0E0E6;
+                overflow: auto;
+            }
+
+            .link-list a {
+                color: blue;
+                text-decoration: none;
+            }
+
+            .link-list a:hover {
+                text-decoration: underline;
+            }
+
+            .first-link-section {
+                float: none;
+                padding-right: none;
+                padding-top: none;
+            }
+
+            .second-link-section {
+                float: none;
+                padding-right: none;
+            }
+
+            .third-link-section {
+                float: none;
+                padding-right: none;
+            }
+
+            .navbar {
+                overflow: auto;
+                background-color: #000000;
+            }
+
+            @media all and (min-width: 500px) and (max-width: 649px) {
+                .first-link-section {
+                    float: left;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+
+                .second-link-section {
+                    float: left;
+                    margin-right: 10px;
+                }
+
+                .third-link-section {
+                    overflow: auto;
+                    padding-right: 10px;
+                    margin-left: 10px;
+                }
+
+                .link-title {
+                    padding-right: 40px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+
+                .nav-item {
+                    background-color: black;
+                    padding: 10px;
+                    float: left;
+                }
+            }
+
+            @media all and (min-width: 650px) and (max-width: 799px) {
+                .first-link-section {
+                    float: left;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+
+                .second-link-section {
+                    float: left;
+                    margin-right: 10px;
+                }
+
+                .third-link-section {
+                    overflow: auto;
+                    padding-right: 10px;
+                    margin-left: 10px;
+                }
+                
+                .link-title {
+                    padding-right: 90px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+
+                .nav-item {
+                    background-color: black;
+                    padding: 10px;
+                    float: left;
+                }
+
+                .first-lorem-div {
+                    float: left;
+                    width: 50%;
+                    border-bottom: none;
+                }
+
+                .nav-button {
+                    font-size: 1em;
+                }
+
+                .nav-content a {
+                    font-size: 1em;
+                    margin-top: 5px;
+                }
+
+                .second-about {
+                    display: block;
+                }
+
+                .about {
+                    display: none;
+                }
+
+                .nav-content {
+                    position: absolute;
+                    border: 2px solid #FFFF;
+                    padding-right: 20px;
+                    margin-right: 20px;
+                    padding-top: 5px;
+                    padding-bottom: 10px;
+                    box-shadow: 9px 10px 5px -1px rgba(128,128,128,1);
+                }
+            }
+
+            @media all and (min-width: 800px) {
+                .nav-item {
+                    background-color: black;
+                    padding: 10px;
+                    float: left;
+                }
+
+                .first-lorem-div {
+                    float: left;
+                    width: 50%;
+                    border-bottom: none;
+                }
+
+                .lorems {
+                    float: left;
+                    width: 65%;
+                }
+
+                .link-sections {
+                    margin-top: 10px;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    
+                }
+
+                .nav-button {
+                    font-size: 1em;
+                }
+
+                .nav-content a {
+                    font-size: 1em;
+                    margin-top: 5px;
+                }
+
+                .second-about {
+                    display: block;
+                }
+
+                .about {
+                    display: none;
+                }
+
+                .nav-content {
+                    position: absolute;
+                    border: 2px solid #FFFF;
+                    padding-right: 20px;
+                    margin-right: 20px;
+                    padding-top: 5px;
+                    padding-bottom: 10px;
+                    box-shadow: 9px 10px 5px -1px rgba(128,128,128,1);
+                }
+
+            }
+                        
+        </style>
+    </head>
+    <body>
+        <div class="about">
+            <div class="about-btn">About us <i class="arrow down"></i></div>
+            <div class="about-content">
+                <a href="#">Find us on Facebook</a>
+                <a href="#">Follow us on Twitter</a>
+                <a href="#">RSS Feeds</a>
+            </div>
+        </div>
+
+        <div class="second-about">
+            <div class="second-about-btn">
+                <a class="second-about-content" href=#>RSS Feeds</a>
+                <a class="second-about-content" href=#>Follow us on Twitter</a>
+                <a class="second-about-content" href=#>Find us on Facebook</a>
+                <a class="second-about-content">About us</a>
+            </div>
+        </div>
+
+        <div class="gradient">
+            <h1 class="header">
+                Lorem Ipsum
+            </h1>
+        </div>
+
+        <div class="navbar">
+        <div class="nav-item">
+            <button class="nav-button">Link</button>
+            <div class="nav-content">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+        </div>
+
+        <div class="nav-item">
+            <button class="nav-button">Link</button>
+            <div class="nav-content">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+        </div>
+
+        <div class="nav-item">
+            <button class="nav-button">Link</button>
+            <div class="nav-content">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+        </div>
+
+        <div class="nav-item">
+            <button class="nav-button">Link</button>
+            <div class="nav-content">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+        </div>
+
+        <div class="nav-item">
+            <button class="nav-button">Link</button>
+            <div class="nav-content">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="lorems">
+        <div class="first-lorem-div">
+            <p class="first-lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel risus et velit vehicula aliquet. Fusce sit amet purus eget est molestie blandit. Praesent interdum ultricies sollicitudin. Nunc commodo gravida sem, eget accumsan justo bibendum a. Proin volutpat, leo at ullamcorper consectetur, sapien lacus aliquet ante, ut luctus erat enim.
+            </p>
+        </div>
+
+        <div clas="second-lorem-div">
+            <p class="second-lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet ullamcorper elementum. Mauris a vulputate arcu, quis mollis velit. Proin semper, odio eu tincidunt interdum, massa ante lobortis est, eu pulvinar nisi erat in diam. Suspendisse faucibus in neque sit amet lobortis. Nulla varius, elit in efficitur maximus, lorem lectus.
+            </p>
+        </div>
+    </div>
+
+        <div class="link-sections">
+            <div class="first-link-section">
+                <h2 class="link-title">
+                    Link title
+                </h2>
+
+                <ul class="link-list">
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="second-link-section">
+                <h2 class="link-title">
+                    Link title
+                </h2>
+
+                <ul class="link-list">
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="third-link-section">
+                <h2 class="link-title">
+                    Link title
+                </h2>
+
+                <ul class="link-list">
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </footer>
+
+    </body>
+</html>
