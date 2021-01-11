@@ -1,7 +1,7 @@
 # Koulu-portfolio
 Tässä on koulussa tekemäni portfolio, alla löytyy linkit tehtävänantoon sekä tehtävään. Kopion tehtävät toisesta reposta tähän, jossa on kaikki tehtävät eikä vain portfolio eli jos kiinnostaa nähdä commitit tai muut tehtävät niin laita viestiä ja lisään siihen tai laitan julkiseksi.
-## Tehtävät
-### HTML
+# Tehtävät
+## HTML
 <b>Eka portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=322777)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/blob/master/HTML/Harjoitus2/Teht%C3%A4v%C3%A42.html)
@@ -13,7 +13,7 @@ Tässä on koulussa tekemäni portfolio, alla löytyy linkit tehtävänantoon se
 <b>Kolmas portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=322781)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/blob/master/HTML/Harjoitus6/Teht%C3%A4v%C3%A46.html)
-### LESS
+## LESS
 <b>Eka portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=322785)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/LESS/Toteutus1)
@@ -21,12 +21,12 @@ Tässä on koulussa tekemäni portfolio, alla löytyy linkit tehtävänantoon se
 <b>Toinen portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=322786)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/LESS/Toteutus2)
-### Javascript ja jQuery
+## Javascript ja jQuery
 <b>jQuery-toiminnallisuutta sivustolla<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=325714)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/Javascript%20ja%20jQuery/jQuery-sivu)
 
-### PHP
+## PHP
 <b>Eka portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=323855)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/PHP/portfoliotehtava1)
@@ -34,7 +34,7 @@ Tässä on koulussa tekemäni portfolio, alla löytyy linkit tehtävänantoon se
 <b>Toinen portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=323856)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/PHP/portfoliotehtava2)
-### AJAX
+## AJAX
 <b>Kommentointisivusto<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=325712)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/AJAX/kommentointisivusto)
