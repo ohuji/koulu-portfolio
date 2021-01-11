@@ -1,0 +1,176 @@
+.BoxBorder(@color) {
+    border: 5px solid @color;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #FFFFFF;
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        border-top: 2px solid @lighten1;
+        border-bottom: 2px solid @lighten1;
+        overflow: auto;
+        box-shadow: 0px 7px 15px -5px rgba(212,212,212,1);
+        li {
+            margin-left: @spacing;
+            padding: @padding;         
+            a {
+                text-decoration: none;
+                color: @lighten1;
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
+header {
+    text-align: center;
+    padding: @padding;
+    margin-top: 175px;
+    .logo {
+        font-size: 3em;
+        font-family: @otsikko;
+    }
+}
+
+#content {
+    #promo-box-container {
+        .promo-box-wrapper {
+           // margin: @spacing;
+            margin-top: 20px;
+            width: 100%;
+            .promo-box {
+                .BoxBorder(@complement);
+                //padding: @padding;
+                padding: 23px;
+                position: relative;
+                .outer {
+                    width: 100%;
+                    background-color: @lighten2;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    transition: opacity 2s;
+                    cursor: pointer;
+                    cursor: hand;
+                    &:hover {
+                     opacity: 0;
+                    }
+                    h1 {
+                        font-size: 1.2em;
+                    }
+                    ul {
+                        li {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    #presentation {
+        margin: @spacing;
+    }
+    #reviews {
+        background-color: @lighten2;
+        #review {
+            margin: @spacing;
+            overflow: auto;
+            h1 {
+                color: @complement;
+                font-style: italic;
+            }
+            p {
+                font-style: italic;
+            }
+            .reviewer {
+                float: right;
+                color: @complement;
+                font-style: italic;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+@media all {
+    @media (min-width: 650px) and (max-width: 799px) {
+        nav {
+            ul {
+                overflow: auto;
+                li{
+                    float: left;
+                    #first-a {
+                        margin-left: 85px;
+                    }
+                }
+            }
+        }
+
+        header {
+            margin-top: 70px;
+            margin-bottom: 60px;
+        }
+
+        #content {
+            #promo-box-container {
+                overflow: auto;
+                .promo-box-wrapper {
+                    float: left;
+                    width: 30%;
+                    margin: @spacing;
+                    .promo-box {
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 800px) and (max-width: 1000px) {
+        nav {
+            ul {
+                overflow: auto;
+                li{
+                    float: left;
+                    #first-a {
+                        margin-left: 200px;
+                    }
+                }
+            }
+        }
+
+        header {
+            margin-top: 70px;
+            margin-bottom: 60px;
+        }
+
+        #content {
+            #promo-box-container {
+                overflow: auto;
+                .promo-box-wrapper {
+                    float: left;
+                    width: 30%;
+                    margin: @spacing;
+                    .promo-box {
+                        padding: @padding;
+                    }
+                }
+            }
+            #reviews {
+                overflow: auto;
+                #review {
+                    float: left; 
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

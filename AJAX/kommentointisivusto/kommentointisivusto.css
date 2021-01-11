@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+#sailio {
+	max-width: 1000px;
+	border: solid 2px brown;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	background-color: tan;
+	text-align: center;
+	font-style: italic;
+}
+
+header h1 {
+	margin: 0;
+	padding: 20px;
+	font-size: 40px;
+}
+
+nav {
+	border-top: solid 2px brown;
+	border-bottom: solid 2px brown;
+}
+
+nav select {
+	width: 100%;
+	background-color: brown;
+	color: tan;
+	font-size: 20px;
+	padding: 5px;
+}
+
+main {
+	padding: 20px;
+}
+
+article .kirjoittajainfo {
+	border-bottom: dashed 2px brown;
+	border-top: dashed 2px brown;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+article h2 {
+	margin-top: 0;
+}
+
+#kommentit {
+	border: solid 1px brown;
+	padding: 10px;
+}
+
+#kommentit h2 {
+	margin-top: 0;
+	font-size: 20px;
+}
+
+.kommentti {
+	margin-bottom: 10px;
+	border-bottom: dashed 1px brown;
+}
+
+.kommentoijainfo {
+	color: gray;
+	display: inline-block;
+	float: right;
+	font-size: 12px;
+}
+
+.kommentti-label {
+	font-weight: bold;
+	display: inline-block;
+	width: 180px;
+}
+
+.luettelo article {
+	border: solid 1px brown;
+	padding: 10px;
+	margin-bottom: 10px;
+}

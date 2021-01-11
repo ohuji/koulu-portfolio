@@ -1,0 +1,131 @@
+#wrapper {
+    border: 5px solid #cc0099;
+}
+
+header {
+    background-color: #ffcccc;
+    margin: 0px;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.saa-otsikko {
+    border-top: 2px solid #cc0099;
+    background-color: #ff99ff;
+    padding: 5px;
+}
+
+.saa-content {
+    overflow: auto;
+    margin-right: 0px;
+}
+
+.paivan-saa {
+    float: left;
+    width: 14%;
+    border-top: 2px solid #cc0099;
+    border-right: 1px solid #cc0099;
+    border-left: 1px solid #cc0099;
+    border-bottom: 2px solid #cc0099;
+    margin-bottom: 10px;
+}
+
+.paiva {
+    font-weight: bold;
+    text-align: center;
+}
+
+.lampotila {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.saatila-p {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.tuulennopeus-p {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.saatila {
+    margin-left: 5px;
+}
+
+.tuulennopeus {
+    margin-left: 5px;
+}
+
+.uutiset {
+    overflow: auto;
+}
+
+.paauutiset {
+    overflow: auto;
+    float: left; 
+    width: 70%;
+    margin-right: 0px;
+}
+
+.paauutinen {
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.uutis-tiedot {
+    color: #808080;
+    font-size: 0.9em;
+    margin-top: 0px;
+}
+
+.sivupaneeli {
+    border: 2px solid #cc0099;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+    padding: 5px;
+    margin-left: 0px;
+}
+
+.uutinen {
+    border-bottom: 2px dashed #cc0099;
+}
+
+.uusimmat-uutiset h3 {
+    background-color: #cc0099;
+    padding: 5px;
+}
+
+.blogi-kirjoitukset h3 {
+    background-color: #cc0099;
+    padding: 5px;
+}
+
+.blogi-kirjoitus {
+    overflow: auto;
+    border-bottom: 2px dashed #cc0099;
+}
+
+.kirjoittaja {
+    color: #808080;
+    font-size: 0.9em;
+    float: left;
+}
+
+.julkaistu {
+    float: right;
+    color: #808080;
+    font-size: 0.9em;
+}

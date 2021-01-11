@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium Web">
+        <style>
+            body {
+                background-image: url('christmas-bg.png');
+            }
+
+            .bg {
+                padding-left: 10px;
+                padding-right: 10px;
+                background-color: #FFFFFF;
+                border-radius: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                overflow: auto;
+            }
+
+            .logo {
+                background-color: red;
+                color: #FFFFFF;
+                text-align: center;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            .header {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-family: "Merriweather";
+                font-weight: 900;
+            }
+
+            .first-lorem-div {
+                border: 2px dashed red;
+                margin-top: 10px;
+            }
+
+            .second-lorem-div {
+                border: 2px dashed red;
+                margin-top: 10px;
+            }
+
+            .third-lorem-div {
+                border: 2px dashed red;
+                margin-top: 10px;
+            }
+
+            .fourth-lorem-div {
+                border: 2px dashed red;
+                margin-top: 10px;
+            }
+
+            .lorem-header {
+                margin-left: 10px;
+                font-family: "Merriweather";
+                font-weight: 400;
+            }
+
+            .lorem-paragraph {
+                margin-left: 10px;
+                margin-right: 10px;
+                font-family: "Titillium Web";
+            }
+
+            .relevant {
+                border: 2px dashed red;
+                margin-top: 10px;
+                float: none;
+            }
+
+            .relevant-header {
+                font-family: "Merriweather";
+                font-weight: 400;
+                background: rgb(255,255,255);
+                background: linear-gradient(270deg, rgba(255,255,255,1) 3%, rgba(255,3,3,1) 50%, rgba(255,255,255,1) 97%);
+                padding: 5px;
+                text-align: center;
+                border: 2px solid red;
+                border-radius: 5px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 5px;
+            }
+
+            .relevant-sub-header {
+                font-family: "Merriweather";
+                font-weight: 400;
+                margin-left: 10px;
+                overflow: auto;
+                margin-bottom: 0px;
+            }
+            
+            .relevant-paragraph {
+                margin-left: 70px;
+                font-family: "Titillium Web";
+                margin-bottom: 30px;
+                margin-top: 0px;
+            }
+
+            .mini-candycane {
+                float: left;
+                margin-right: 10px;
+            }
+
+            .review-wrapper {
+                border: 2px dashed red;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                overflow: auto;
+            }
+
+            .review-header {
+                font-family: "Merriweather";
+                font-weight: 400;
+                background: rgb(255,255,255);
+                background: linear-gradient(270deg, rgba(255,255,255,1) 3%, rgba(255,3,3,1) 50%, rgba(255,255,255,1) 97%);
+                padding: 5px;
+                text-align: center;
+                border: 2px solid red;
+                border-radius: 5px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 5px;
+            }
+
+            .review-paragraph {
+                margin-left: 10px;
+                font-family: "Titillium Web";
+                margin-right: 10px;
+            }
+
+            .first-review {
+                border-bottom: 2px dashed red;
+            }
+
+            footer {
+                background-color: red;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                overflow: auto;
+            }
+
+            .second-footer-info {
+                overflow: auto;
+            }
+
+            .footer-info {
+                float: left;
+            }
+
+            .footer-info-paragraph {
+                margin-left: 10px;
+                font-family: "Tillium Web";
+                font-weight: 900;
+            }
+
+            .second-footer-info-paragraph {
+                margin-left: 20px;
+                font-family: "Tillium Web";
+            }
+
+            .footer-link {
+                font-size: 1.3em;
+                text-decoration: none;
+                color: red;
+                font-family: "Merriweather";
+                font-weight: 400;
+            }
+
+            .footer-link-div {
+                background-color: #335a16;
+                margin-top: 10px;
+                padding: 5px;
+                margin-right: 10px;
+                margin-left: 10px;
+                text-align: center;
+            }
+
+            .footer-link:hover {
+                text-decoration: underline;
+            }
+
+            .footer-links {
+                margin-bottom: 10px;
+                overflow: auto;
+                float: none;
+            }
+
+            .icon {
+                height: 40px;
+                width: 40px;
+                margin-left: 5px;
+            }
+
+            .icons {
+                margin-top: 10px;
+                padding-bottom: 10px;
+                margin-left: 175px;
+                overflow: auto;
+            }
+
+            .first-lorem-group {
+                float: none;
+            }
+
+            .second-lorem-group {
+                overflow: auto;
+            }
+
+            .footer-info-wrapper {
+                float: none;
+            }
+
+            .candycanes {
+                display: none;
+            }
+
+            .candycane {
+                height: 200px;
+                width: 200px;
+                margin-left: 5px;
+                border: 2px solid #000000;
+            }
+
+            .second-relevant {
+                display: none;
+            }
+
+            .third-relevant {
+                display: none;
+            }
+
+            .relevant-review {
+                overflow: auto;
+            }
+
+            .lorems {
+                float: none;
+            }
+
+            @media all and (min-width: 600px) and (max-width: 699px) {
+                .first-lorem-group {
+                    float: left;
+                    width: 50%;
+                }
+
+                .first-lorem-div {
+                    border: none;
+                }
+
+                .second-lorem-div {
+                    border: none;
+                }
+
+                .third-lorem-div {
+                    border: none;
+                }
+
+                .fourth-lorem-div {
+                    border: none;
+                }
+
+                .footer-info-wrapper {
+                    float: left;
+                }
+
+                .footer-links {
+                    margin-top: 10px;
+                }
+
+                .icons {
+                    margin-left: 10px;
+                }
+
+                .candycanes {
+                    display: block;
+                }
+
+                .second-relevant {
+                    display: block;
+                }
+            }
+
+            @media all and (min-width: 700px) and (max-width: 799px) {
+                .first-lorem-group {
+                    float: left;
+                    width: 50%;
+                }
+
+                .first-lorem-div {
+                    border: none;
+                }
+
+                .second-lorem-div {
+                    border: none;
+                }
+
+                .third-lorem-div {
+                    border: none;
+                }
+
+                .fourth-lorem-div {
+                    border: none;
+                }
+
+                .footer-info-wrapper {
+                    float: left;
+                }
+
+                .footer-links {
+                    margin-top: 10px;
+                }
+
+                .icons {
+                    margin-left: 10px;
+                }
+
+                .candycanes {
+                    display: block;
+                }
+
+                .second-relevant {
+                    display: block;
+                }
+
+                .relevant {
+                    float: left;
+                    width: 50%;
+                    margin-right: 10px;
+                }
+
+                .candycane {
+                    height: 235px;
+                    width: 235px;
+                }
+            }
+
+            @media all and (min-width: 800px) and (max-width: 1000px) {
+                .first-lorem-group {
+                    float: left;
+                    width: 50%;
+                }
+
+                .first-lorem-div {
+                    border: none;
+                }
+
+                .second-lorem-div {
+                    border: none;
+                }
+
+                .third-lorem-div {
+                    border: none;
+                }
+
+                .fourth-lorem-div {
+                    border: none;
+                }
+
+                .footer-info-wrapper {
+                    float: left;
+                }
+
+                .footer-links {
+                    margin-top: 10px;
+                }
+
+                .icons {
+                    margin-left: 10px;
+                }
+
+                .candycanes {
+                    display: block;
+                }
+
+                .second-relevant {
+                    display: block;
+                }
+
+                .candycane {
+                    height: 270px;
+                    width: 270px;
+                }
+
+                .lorems {
+                    float: left;
+                    width: 70%;
+                }
+
+                .bg {
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+
+                .footer-links {
+                    float: left;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+
+                .icons {
+                    margin-top: 20px;
+                }
+
+                .relevant-review {
+                    border: 2px dashed red;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+
+                .relevant {
+                    border: none;
+                }
+
+                .review-wrapper {
+                    border: none;
+                }
+
+                .footer-links {
+                    width: 35%;
+                }
+
+                .footer-info-wrapper {
+                    margin-top: 10px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="bg">
+            <div class="logo">
+                <h1 class="header">
+                    Makeistehdas Karamelli
+                </h1>
+            </div>
+
+            <div class="candycanes">
+                <img class="candycane" src="candycane-promo.png"/>
+                <img class="candycane" src="candycane-promo.png"/>
+                <img class="candycane" src="candycane-promo.png"/>
+            </div>
+
+            <div class="lorems">
+                <div class="first-lorem-group">
+                    <div class="first-lorem-div">
+                        <h3 class="lorem-header">
+                            Lorem Ipsum
+                        </h3>
+                        <p class="lorem-paragraph"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis lacinia tellus sit amet pellentesque. Curabitur fermentum fermentum ipsum, vitae consectetur sem tincidunt condimentum. Proin finibus lorem sit amet porta sollicitudin. Donec nec aliquam dui, id hendrerit turpis. Integer luctus arcu eget tellus sodales iaculis. Phasellus sed est eleifend nisi ullamcorper fringilla sit amet sit amet felis. Pellentesque sed accumsan.
+                        </p>
+                    </div>
+                
+
+                    <div class="second-lorem-div">
+                        <h3 class="lorem-header">
+                            Lorem Ipsum
+                        </h3>
+                        <p class="lorem-paragraph"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis lacinia tellus sit amet pellentesque. Curabitur fermentum fermentum ipsum, vitae consectetur sem tincidunt condimentum. Proin finibus lorem sit amet porta sollicitudin. Donec nec aliquam dui, id hendrerit turpis. Integer luctus arcu eget tellus sodales iaculis. Phasellus sed est eleifend nisi ullamcorper fringilla sit amet sit amet felis. Pellentesque sed accumsan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="second-lorem-group">
+                    <div class="third-lorem-div">
+                        <h3 class="lorem-header">
+                            Lorem Ipsum
+                        </h3>
+                        <p class="lorem-paragraph"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis lacinia tellus sit amet pellentesque. Curabitur fermentum fermentum ipsum, vitae consectetur sem tincidunt condimentum. Proin finibus lorem sit amet porta sollicitudin. Donec nec aliquam dui, id hendrerit turpis. Integer luctus arcu eget tellus sodales iaculis. Phasellus sed est eleifend nisi ullamcorper fringilla sit amet sit amet felis. Pellentesque sed accumsan.
+                        </p>
+                    </div>
+
+                    <div class="fourth-lorem-div">
+                        <h3 class="lorem-header">
+                            Lorem Ipsum
+                        </h3>
+                        <p class="lorem-paragraph"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis lacinia tellus sit amet pellentesque. Curabitur fermentum fermentum ipsum, vitae consectetur sem tincidunt condimentum. Proin finibus lorem sit amet porta sollicitudin. Donec nec aliquam dui, id hendrerit turpis. Integer luctus arcu eget tellus sodales iaculis. Phasellus sed est eleifend nisi ullamcorper fringilla sit amet sit amet felis. Pellentesque sed accumsan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relevant-review">
+                <div class="relevant">
+                    <h3 class="relevant-header">
+                        Ajankohtaista
+                    </h3>
+                    <div class="first-relevant">
+                        <h3 class="relevant-sub-header">
+                            <img class="mini-candycane" src="candycane-mini.png"/>
+                            Hyvää joulua!
+                        </h3>
+                        <p class="relevant-paragraph">
+                            Karamelli toivottaa kaikille hyvää joulua!
+                        </p>
+                    </div>
+
+                    <div class="second-relevant">
+                        <h3 class="relevant-sub-header">
+                            <img class="mini-candycane" src="candycane-mini.png"/>
+                            Hyvää joulua!
+                        </h3>
+                        <p class="relevant-paragraph">
+                            Karamelli toivottaa kaikille hyvää joulua!
+                        </p>
+                    </div>
+                    
+                    <div class="third-relevant">
+                        <h3 class="relevant-sub-header">
+                            <img class="mini-candycane" src="candycane-mini.png"/>
+                            Hyvää joulua!
+                        </h3>
+                        <p class="relevant-paragraph">
+                            Karamelli toivottaa kaikille hyvää joulua!
+                        </p>
+                    </div> 
+                </div>
+
+                <div class="review-wrapper">
+                    <h3 class="review-header">
+                        Meistä sanottua
+                    </h3>
+                    <div class="first-review">
+                        <p class="review-paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in tincidunt justo. Mauris porttitor fringilla purus, rutrum hendrerit magna. Aliquam gravida porttitor odio ac congue. Cras ornare.
+                        </p>
+                    </div>
+
+                    <div class="review">
+                        <p class="review-paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in tincidunt justo. Mauris porttitor fringilla purus, rutrum hendrerit magna. Aliquam gravida porttitor odio ac congue. Cras ornare.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+                <footer>
+                    <div class="footer-info-wrapper">
+                        <div class="footer-info">
+                            <p class="footer-info-paragraph">
+                                Postiosoite:
+                            </p>
+                            <p class="footer-info-paragraph">
+                                Puh. (vaihde):
+                            </p>
+                            <p class="footer-info-paragraph">
+                                Sähköposti:
+                            </p>
+                        </div>
+
+                        <div class="second-footer-info">
+                            <p class="second-footer-info-paragraph">
+                                Makeiskatu 3
+                            </p>
+                            <p class="second-footer-info-paragraph">
+                                0125467890
+                            </p>
+                            <p class="second-footer-info-paragraph">
+                                makeistehdas@karamelli.fi
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-link-div">
+                            <a href="#" class="footer-link">Tuotteet</a>
+                        </div>
+                        <div class="footer-link-div">
+                            <a href="#" class="footer-link">Jälleenmyyjät</a>
+                        </div>
+                        <div class="footer-link-div">
+                            <a href="#" class="footer-link">Asiakaspalvelu</a>
+                        </div>
+                        <div class="footer-link-div">
+                            <a href="#" class="footer-link">Medialle</a>
+                        </div>
+                    </div>
+
+                    <div class="icons">
+                        <img class="icon" src="facebook.png"/>
+                        <img class="icon" src="linkedin.png"/>
+                        <img class="icon" src="youtube.png"/>
+                        <img class="icon" src="twitter.png"/>
+                    </div>
+                </footer>
+            </div>
+    </body>
+</html>

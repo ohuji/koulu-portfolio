@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+#sailio {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	background-color: lightblue;
+	border: solid 2px darkblue;
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+#sivupalkki {
+	background-color: lightblue;
+	border: solid 2px darkblue;
+	width: 200px;
+	float: left;
+}
+
+#sivupalkki nav h3 {
+	background-color: darkblue;
+	color: lightblue;
+	margin: 0;
+	padding: 10px;
+	border: solid 1px lightblue;
+}
+
+.kiinni h3::after {
+	content: "▼";
+	display: inline-block;
+	float: right;
+}
+
+.auki h3::after {
+	content: "▲";
+	display: inline-block;
+	float: right;
+}
+
+.kiinni ul {
+	display: none;
+}
+
+#sisalto {
+	margin-left: 220px;
+}
+
+#sisalto nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#sisalto nav li {
+	display: inline-block;
+	padding: 10px;
+	border: solid 1px darkblue;
+	border-bottom: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: white;
+}
+
+#sisalto nav li.valittu {
+	background-color: darkblue;
+	color: lightblue;
+}
+
+#tab1, #tab2, #tab3 {
+	padding: 10px;
+	padding-top: 0px;
+	border: solid 2px darkblue;
+	display: none;
+}
+
+#sisalto div.valittu {
+	display: block;
+}
+
+#tab1 .rlabel {
+	display: inline-block;
+	width: 150px;
+}
+
+#tab1 .ohje {
+	color: gray;
+	display: inline-block;
+	padding-left: 10px;
+	display: none;
+}
+
+#tab2 p {
+	text-align: right;
+}
+
+#laskentataulukko {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#laskentataulukko td {
+	width: 20%;
+	border: solid 1px black;
+}
+
+#laskentataulukko .poisto {
+	border: none;
+}
+
+#kortit {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#kortit td {
+	width: 25%;
+	padding: 10px;
+}
+
+#tab3 #viesti, #tab3 #aloita {
+	text-align: center;
+	margin-top: 10px;
+}

@@ -1,0 +1,146 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  border-top: 2px solid #994d4d;
+  border-bottom: 2px solid #994d4d;
+  overflow: auto;
+  box-shadow: 0px 7px 15px -5px #d4d4d4;
+}
+nav ul li {
+  margin-left: 10px;
+  padding: 5px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #994d4d;
+  font-size: 1.3em;
+}
+header {
+  text-align: center;
+  padding: 5px;
+  margin-top: 175px;
+}
+header .logo {
+  font-size: 3em;
+  font-family: "Lobster";
+}
+#content #promo-box-container .promo-box-wrapper {
+  margin-top: 20px;
+  width: 100%;
+}
+#content #promo-box-container .promo-box-wrapper .promo-box {
+  border: 5px solid #2b5555;
+  padding: 23px;
+  position: relative;
+}
+#content #promo-box-container .promo-box-wrapper .promo-box .outer {
+  width: 100%;
+  background-color: #bb7777;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: opacity 2s;
+  cursor: pointer;
+  cursor: hand;
+}
+#content #promo-box-container .promo-box-wrapper .promo-box .outer:hover {
+  opacity: 0;
+}
+#content #promo-box-container .promo-box-wrapper .promo-box .outer h1 {
+  font-size: 1.2em;
+}
+#content #promo-box-container .promo-box-wrapper .promo-box .outer ul li {
+  font-size: 1.2em;
+}
+#content #presentation {
+  margin: 10px;
+}
+#content #reviews {
+  background-color: #bb7777;
+}
+#content #reviews #review {
+  margin: 10px;
+  overflow: auto;
+}
+#content #reviews #review h1 {
+  color: #2b5555;
+  font-style: italic;
+}
+#content #reviews #review p {
+  font-style: italic;
+}
+#content #reviews #review .reviewer {
+  float: right;
+  color: #2b5555;
+  font-style: italic;
+  font-weight: 900;
+}
+@media all and (min-width: 650px) and (max-width: 799px) {
+  nav ul {
+    overflow: auto;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li #first-a {
+    margin-left: 85px;
+  }
+  header {
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+  #content #promo-box-container {
+    overflow: auto;
+  }
+  #content #promo-box-container .promo-box-wrapper {
+    float: left;
+    width: 30%;
+    margin: 10px;
+  }
+  #content #promo-box-container .promo-box-wrapper .promo-box {
+    padding: 15px;
+  }
+}
+@media all and (min-width: 800px) and (max-width: 1000px) {
+  nav ul {
+    overflow: auto;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li #first-a {
+    margin-left: 200px;
+  }
+  header {
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+  #content #promo-box-container {
+    overflow: auto;
+  }
+  #content #promo-box-container .promo-box-wrapper {
+    float: left;
+    width: 30%;
+    margin: 10px;
+  }
+  #content #promo-box-container .promo-box-wrapper .promo-box {
+    padding: 5px;
+  }
+  #content #reviews {
+    overflow: auto;
+  }
+  #content #reviews #review {
+    float: left;
+    width: 30%;
+  }
+}

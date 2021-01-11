@@ -1,0 +1,479 @@
+nav {
+  border-right: 2px solid #336600;
+  border-left: 2px solid #336600;
+  border-top: 2px solid #336600;
+}
+nav ul {
+  list-style: none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 0px;
+}
+nav ul li {
+  background-color: #33cc33;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #336600;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+nav ul li:hover {
+  background-color: #a6e468;
+}
+nav ul li:hover .submenu {
+  display: block;
+}
+nav ul li .submenu {
+  display: none;
+  background-color: #33cc33;
+  z-index: 1;
+}
+nav ul li .submenu a {
+  color: #336600;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+}
+nav ul li .submenu a:hover {
+  background-color: #a6e468;
+}
+#site-header {
+  border: 2px solid #336600;
+  background-image: url("banner.png");
+  text-align: center;
+  margin-top: 0px;
+}
+#site-header h1 {
+  color: #336600;
+  text-shadow: 2px 2px 3px #a6e468;
+  font-size: 46px;
+}
+#content #row1 #news-box .news {
+  margin: 10px;
+}
+#content #row1 #news-box .news .date {
+  color: #808080;
+  font-weight: 900;
+}
+#content #row1 #news-box .news h1 {
+  font-size: 26px;
+  margin-bottom: 0px;
+}
+#content #row1 #sidebar #login-box h1 {
+  background-color: #33cc33;
+  color: #336600;
+  padding: 5px;
+  font-size: 20px;
+}
+#content #row1 #sidebar #login-box p .login-label {
+  margin-right: 20px;
+}
+#content #row1 #sidebar #login-box p input {
+  background-color: #a6e468;
+  border-color: #d4d4d4;
+}
+#content #row1 #sidebar #events h1 {
+  background-color: #33cc33;
+  color: #336600;
+  padding: 5px;
+  font-size: 20px;
+}
+#content #row1 #sidebar #events .event {
+  overflow: auto;
+  margin-top: 5px;
+}
+#content #row1 #sidebar #events .event .event-date {
+  border: 2px solid #336600;
+  margin-right: 20px;
+  float: left;
+  width: 60px;
+  text-align: center;
+  height: 50px;
+}
+#content #row1 #sidebar #events .event .event-date .month {
+  color: #a6e468;
+  background-color: #336600;
+  padding-top: 3px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+#content #row1 #sidebar #events .event .event-date .day {
+  margin: 10px;
+  font-size: 20px;
+}
+#content #row1 #sidebar #events .event .event-name {
+  overflow: auto;
+  margin-top: 15px;
+}
+#content #row1 #sidebar #events .event .event-name a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+}
+#content #row2 {
+  background-color: #a6e468;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#content #row2 .project {
+  border: 2px solid #336600;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #FFFFFF;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+#content #row2 .project h1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 22px;
+}
+#content #row2 .project p {
+  margin: 10px;
+}
+#content #row3 #twitter header {
+  margin-left: 225px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#content #row3 #twitter .tw-post {
+  overflow: auto;
+}
+#content #row3 #twitter .tw-post .tw-logo {
+  float: left;
+  margin-right: 10px;
+}
+#content #row3 #twitter .tw-post .tw-content {
+  overflow: auto;
+  margin-bottom: 10px;
+}
+#content #row3 #twitter .tw-post .tw-content .tw-user {
+  color: #33cc33;
+}
+#content #row3 #twitter .tw-post .tw-content .tw-date {
+  color: #808080;
+  float: right;
+}
+#content #row3 #twitter .tw-post .tw-content .tweet-buttons {
+  float: right;
+  margin-top: 10px;
+}
+#content #row3 #facebook header {
+  margin-left: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#content #row3 #facebook .fb-post {
+  margin-top: 10px;
+  border-bottom: 2px dashed #808080;
+}
+#content #row3 #facebook .fb-post .fb-user {
+  color: #33cc33;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+#content #row3 #facebook .fb-post .fb-date {
+  color: #808080;
+  font-size: 0.8em;
+}
+#content #row3 #facebook .fb-post .fb-content {
+  overflow: auto;
+  margin-bottom: 10px;
+}
+#content #row3 #facebook .fb-post .fb-content .fb-like {
+  width: 80px;
+  height: 40px;
+  float: right;
+}
+@media all and (min-width: 500px) and (max-width: 650px) {
+  nav {
+    background-color: #33cc33;
+  }
+  nav ul li {
+    float: left;
+    padding-left: 21px;
+    padding-right: 21px;
+    position: relative;
+  }
+  nav ul li .submenu {
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    background-color: transparent;
+    background-image: url('navi-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    margin-top: -15px;
+    padding-top: 26px;
+  }
+  nav ul li .submenu li:hover a {
+    background-color: #a6e468;
+  }
+  nav ul li .submenu a {
+    background-color: #33cc33;
+    color: #336600;
+  }
+  #content #row2 .project {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  #content #row3 #twitter header {
+    margin-left: 275px;
+  }
+  #content #row3 #facebook header {
+    margin-left: 250px;
+  }
+}
+@media all and (min-width: 651px) and (max-width: 800px) {
+  nav {
+    background-color: #33cc33;
+  }
+  nav ul li {
+    float: left;
+    padding-left: 36px;
+    padding-right: 36px;
+    position: relative;
+  }
+  nav ul li .submenu {
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    background-color: transparent;
+    background-image: url('navi-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    margin-top: -15px;
+    padding-top: 26px;
+  }
+  nav ul li .submenu li:hover a {
+    background-color: #a6e468;
+  }
+  nav ul li .submenu a {
+    background-color: #33cc33;
+    color: #336600;
+  }
+  #content #row1 #news-box {
+    overflow: auto;
+  }
+  #content #row1 #news-box .news {
+    margin: 10px;
+    float: left;
+    width: 30%;
+  }
+  #content #row1 #news-box .news .date {
+    color: #808080;
+    font-weight: 900;
+  }
+  #content #row1 #news-box .news h1 {
+    font-size: 26px;
+    margin-bottom: 0px;
+  }
+  #content #row1 #sidebar {
+    overflow: auto;
+  }
+  #content #row1 #sidebar #login-box {
+    float: left;
+    width: 50%;
+  }
+  #content #row1 #sidebar #events {
+    overflow: auto;
+  }
+  #content #row2 {
+    overflow: auto;
+  }
+  #content #row2 .project {
+    float: left;
+    width: 20%;
+    margin: 10px;
+  }
+  #content #row3 #twitter {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #content #row3 #twitter header {
+    margin-left: 250px;
+  }
+  #content #row3 #facebook {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #content #row3 #facebook header {
+    margin-left: 230px;
+  }
+}
+@media all and (min-width: 801px) and (max-width: 1000px) {
+  nav {
+    background-color: #33cc33;
+  }
+  nav ul li {
+    float: left;
+    padding-left: 56px;
+    padding-right: 56px;
+    position: relative;
+  }
+  nav ul li .submenu {
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    background-color: transparent;
+    background-image: url('navi-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    margin-top: -15px;
+    padding-top: 26px;
+  }
+  nav ul li .submenu li:hover a {
+    background-color: #a6e468;
+  }
+  nav ul li .submenu a {
+    background-color: #33cc33;
+    color: #336600;
+  }
+  #content #row1 {
+    overflow: auto;
+  }
+  #content #row1 #news-box {
+    overflow: auto;
+    float: left;
+    width: 70%;
+  }
+  #content #row1 #news-box .news {
+    margin: 10px;
+    float: left;
+    width: 30%;
+  }
+  #content #row1 #news-box .news .date {
+    color: #808080;
+    font-weight: 900;
+  }
+  #content #row1 #news-box .news h1 {
+    font-size: 26px;
+    margin-bottom: 0px;
+  }
+  #content #row1 #sidebar {
+    overflow: auto;
+  }
+  #content #row1 #sidebar #login-box h1 {
+    padding: 10px;
+  }
+  #content #row1 #sidebar #events h1 {
+    padding: 10px;
+  }
+  #content #row2 {
+    overflow: auto;
+  }
+  #content #row2 .project {
+    float: left;
+    width: 17%;
+    margin: 10px;
+  }
+  #content #row3 #twitter {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #content #row3 #twitter header {
+    margin-left: 340px;
+  }
+  #content #row3 #facebook {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #content #row3 #facebook header {
+    margin-left: 320px;
+  }
+}
+@media all and (min-width: 1001px) and (max-width: 1200px) {
+  nav {
+    background-color: #33cc33;
+  }
+  nav ul li {
+    float: left;
+    padding-left: 76px;
+    padding-right: 76px;
+    position: relative;
+  }
+  nav ul li .submenu {
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    background-color: transparent;
+    background-image: url('navi-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    margin-top: -15px;
+    padding-top: 26px;
+  }
+  nav ul li .submenu li:hover a {
+    background-color: #a6e468;
+  }
+  nav ul li .submenu a {
+    background-color: #33cc33;
+    color: #336600;
+  }
+  #content #row1 {
+    overflow: auto;
+  }
+  #content #row1 #news-box {
+    overflow: auto;
+    float: left;
+    width: 70%;
+  }
+  #content #row1 #news-box .news {
+    margin: 10px;
+    float: left;
+    width: 30%;
+  }
+  #content #row1 #news-box .news .date {
+    color: #808080;
+    font-weight: 900;
+  }
+  #content #row1 #news-box .news h1 {
+    font-size: 26px;
+    margin-bottom: 0px;
+  }
+  #content #row1 #sidebar {
+    overflow: auto;
+  }
+  #content #row1 #sidebar #login-box h1 {
+    padding: 10px;
+  }
+  #content #row1 #sidebar #events h1 {
+    padding: 10px;
+  }
+  #content #row2 {
+    overflow: auto;
+    padding: 20px;
+  }
+  #content #row2 .project {
+    float: left;
+    width: 18%;
+    margin: 10px;
+    margin-left: 8px;
+  }
+  #content #row3 {
+    overflow: auto;
+  }
+  #content #row3 #twitter {
+    margin-left: 100px;
+    margin-right: 100px;
+    float: left;
+    width: 35%;
+  }
+  #content #row3 #twitter header {
+    margin-left: 195px;
+  }
+  #content #row3 #facebook {
+    overflow: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+  }
+  #content #row3 #facebook header {
+    margin-left: 175px;
+  }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jQuery-toiminnallisuutta</title>
+	<link rel="stylesheet" type="text/css" href="jquery-sivusto.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+	<script src="jquery-sivusto.js"></script>
+</head>
+
+<body>
+
+<div id="sailio">
+	<header>
+		<h1>JQuery-toiminnallisuutta sivustolla</h1>
+	</header>
+	
+	<div id="sivupalkki">
+	<!-- navigaatiopalkit "aukeavat" (ja sulkeutuvat) otsikkoa napsauttamalla, samalla nuoli vaihtaa suuntaa (ylös/alas) -->
+		<nav class="auki">
+			<h3>Linkkiotsikko</h3>
+			<ul>
+				<li><a href="#">Linkki</a></li>
+				<li><a href="#">Linkki</a></li>
+				<li><a href="#">Linkki</a></li>
+				<li><a href="#">Linkki</a></li>
+			</ul>
+		</nav>
+		<nav class="kiinni">
+			<h3>Linkkiotsikko</h3>
+			<ul>
+				<li><a href="#">Linkki</a></li>
+				<li><a href="#">Linkki</a></li>
+				<li><a href="#">Linkki</a></li>
+				<li><a href="#">Linkki</a></li>
+			</ul>
+		</nav>
+		<nav class="kiinni">
+			<h3>Linkkiotsikko</h3>
+			<ul>
+				<li><a href="#">Linkki</a></li>
+				<li><a href="#">Linkki</a></li>
+				<li><a href="#">Linkki</a></li>
+				<li><a href="#">Linkki</a></li>
+			</ul>
+		</nav>
+		<nav class="kiinni">
+			<h3>Linkkiotsikko</h3>
+			<ul>
+				<li><a href="#">Linkki</a></li>
+				<li><a href="#">Linkki</a></li>
+				<li><a href="#">Linkki</a></li>
+				<li><a href="#">Linkki</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<div id="sisalto">
+		<!-- välilehteä voi vaihtaa napsauttamalla -->
+		<nav>
+			<ul>
+				<li data-tab="1" class="valittu">Rekisteröitymislomake</li>
+				<li data-tab="2">Laskentataulukko</li>
+				<li data-tab="3">Arvauspeli</li>
+			</ul>
+		</nav>
+		<!--
+		Kaikki kentät ovat pakollisia. Jos lomake yritetään lähettää täyttämättä kaikkia kenttiä, sitä ei lähetetä ja tyhjien kenttien nimet värjätään punaisiksi (muiden tulee olla mustia).
+		Salasanakentän ohje näytetään, kun kenttä saa fokuksen, ja piilotetaan, kun fokus poistuu (blur).
+		Kun salasanakenttään kirjoitetaan, se muuttuu taustaltaan (vaalean)punaiseksi jos salasana on alle 8 merkkiä pitkä, vihreäksi muuten. Samoin "salasana uudelleen" -kenttä on punainen jos salasanat eivät täsmää, vihreä jos täsmäävät.
+		Lähetysnappi aktivoituu vasta, kun "Hyväksyn käyttöehdot" on ruksittu.
+		-->
+		<div id="tab1" class="valittu">
+			<h3>Rekisteröitymislomake</h3>
+			
+			<form id="rekisteroityminen">
+				<p><span class="rlabel">Nimimerkki:</span><input type="text" id="nimimerkkikentta"></p>
+				<p><span class="rlabel">Sähköposti:</span><input type="email" id="sahkopostikentta"></p>
+				<p><span class="rlabel">Salasana:</span><input type="password" id="salasanakentta1"><span class="ohje">Salasanan tulee olla vähintään 8 merkkiä pitkä.</span></p>
+				<p><span class="rlabel">Salasana uudelleen:</span><input type="password" id="salasanakentta2"></p>
+				<p><span class="rlabel"></span><input type="checkbox" id="hyvaksykayttoehdot"> Hyväksyn käyttöehdot</p>
+				<p><input type="submit" value="Rekisteröidy" disabled></p>
+			</form>
+		</div>
+		<!--
+		* Kaksoisnapsauttamalla solun voi muuttaa editoitavaksi.
+		* Kaksoisnapsauttamalla toista solua tai painamalla enter-näppäintä solu palautetaan ei-editoitavaksi.
+		* Lisää rivi -nappi lisää uuden rivin alimmaksi.
+		* Poista-nappi poistaa kyseisen rivin.
+		-->
+		<div id="tab2">
+			<h3>Laskentataulukko</h3>
+			<table id="laskentataulukko">
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="poisto"><button>Poista</button></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="poisto"><button>Poista</button></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="poisto"><button>Poista</button></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="poisto"><button>Poista</button></td>
+				</tr>
+			</table>
+			<p><button id="lisaarivi">Lisää rivi</button></p>
+		</div>
+		<!--
+		Peli alkaa vasta Aloita-nappia painettaessa.
+		Käyttäjä napsauttaa "kortteja" yksi kerrallaan kääntääkseen ne. Samaa korttia ei voi "kääntää" enää toisen kerran. Tähän on kolme yritystä.
+		Jos käyttäjä löytää sydänkortin, hän voittaa. Auringolla saa yhden lisäyrityksen. Murtuneeseen sydämeen peli päättyy heti.
+		Näytä sopivat viestit (voitit, hävisit, yrityksiä jäljellä: x, käytit kaikki yrityksesi) korttien alapuolella.	Pysäytä peli kokonaan, kun se päättyy (pura tapahtumankäsittelijät korteista).
+		Sekoita kortit joka pelikerralla (vihje: tallenna kuvanimet taulukkoon ja sekoita se).
+		-->
+		<div id="tab3">
+			<h3>Arvauspeli</h3>
+			<table id="kortit">
+				<tr>
+					<td><img src="kortti.png" data-indeksi="1"></td>
+					<td><img src="kortti.png" data-indeksi="2"></td>
+					<td><img src="kortti.png" data-indeksi="3"></td>
+					<td><img src="kortti.png" data-indeksi="4"></td>
+				</tr>
+				<tr>
+					<td><img src="kortti.png" data-indeksi="5"></td>
+					<td><img src="kortti.png" data-indeksi="6"></td>
+					<td><img src="kortti.png" data-indeksi="7"></td>
+					<td><img src="kortti.png" data-indeksi="8"></td>
+				</tr>
+				<tr>
+					<td><img src="kortti.png" data-indeksi="9"></td>
+					<td><img src="kortti.png" data-indeksi="10"></td>
+					<td><img src="kortti.png" data-indeksi="11"></td>
+					<td><img src="kortti.png" data-indeksi="12"></td>
+				</tr>
+			</table>
+			<div id="viesti">Aloita peli painamalla Aloita-nappia.</div>
+			<div id="aloita"><button id="aloitusnappi">Aloita</button></div>
+		</div>
+	
+	</div>
+
+</div>
+
+</body>
+</html>

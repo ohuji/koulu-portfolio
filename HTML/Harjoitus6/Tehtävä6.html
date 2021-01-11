@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .dropdown {
+                display: block;
+            }
+
+            .drop-btn {
+                background-color: #b999a1;
+                padding-left: 5px;
+                font-size: 1.2em;
+                border: 2px solid #852425;
+                font-family: "Palatino Linotype";
+                color: #852425;
+            }
+
+            .drop-content {
+                display: none;
+            }
+
+            .drop-content a {
+                text-decoration: none;
+                padding: 10px;
+                display: block;
+                font-family: "Palatino Linotype";
+                color: #852425;
+            }
+
+            .drop-content a:hover {
+                text-decoration: underline;
+            }
+
+            .dropdown:hover .drop-content {
+                display: block;
+                background-color: #b999a1;
+            }
+
+            .logo {
+                width: 100%;
+                height: auto;
+                margin-top: 10px;
+            }
+
+            .menu {
+                background-color: #fff7e6;
+                border: 2px solid #852425;
+                float: none;
+                margin-bottom: 0px;
+            }
+
+            .menu-item {
+                background-color: #b999a1;
+                font-size: 1.2em;
+                padding: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            footer {
+                background-color: black;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 1.2em;
+                margin-top: 0px;
+            }
+
+            .footer-paragraph {
+                margin-top: 0px;
+                padding: 10px;
+                margin-bottom: 0px;
+            }
+
+            .arrow {
+                border: solid #852425;
+                border-width: 0 4px 4px 0;
+                padding: 3px;
+                margin-right: 10px;
+                float: right;
+                margin-top: 5px;
+            }
+
+            .second-arrow {
+                border: solid #000000;
+                border-width: 0 2px 2px 0;
+                padding: 3px;
+                margin-right: 10px;
+                float: right;
+                margin-top: 5px;
+                display: block;
+            }
+
+            .third-arrow {
+                border: solid #FFFFFF;
+                border-width: 0 2px 2px 0;
+                padding: 3px;
+                margin-right: 2px;
+                margin-left: 2px;
+                float: right;
+                margin-top: 5px;
+            }
+
+            .down {
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+            }
+
+            .right {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+
+            .menu-link {
+                color: black;
+                text-decoration: none;
+                font-family: "Garamond";
+                font-weight: 900;
+            }
+
+            .menu-link:hover {
+                text-decoration: underline;
+            }
+
+            .navbar {
+                display: none;
+                overflow: auto;
+            }
+
+            .nav-item {
+                padding: 10px;
+                border-right: 2px solid black;
+                float: right;
+                background-color: #b999a1;
+                width: 17%;
+                font-family: "Garamond";
+                font-weight: 900;
+            }
+
+            .logo-div {
+                display: block;
+                float: none;
+            }
+
+            .header-info-wrapper {
+                display: none;
+                border-top: 2px solid #000000;
+                background-color: #fff7e6;
+                border-bottom: 2px solid #000000;
+                margin-bottom: 5px;
+            }
+
+            .header {
+                text-align: center;
+                margin-right: 10px;
+                margin-left: 10px;
+                border-bottom: 2px dashed #d4d4d4d4;
+                float: none;
+            }
+
+            .info {
+                margin-left: 10px;
+                padding-bottom: 10px;
+                margin-right: 10px;
+                overflow: auto;
+            }
+
+            .header h1 {
+               font-family: "Palatino Linotype";
+            }
+
+            .header h3 {
+               font-family: "Palatino Linotype";
+               font-style: italic;
+            }
+
+            .info p {
+                font-family: "Book Antiqua";
+            }
+
+            .page-header {
+                border-top: 2px dashed #d4d4d4d4;
+                border-bottom: 2px dashed #d4d4d4d4;
+                text-align: center;
+                font-family: "Palatino Linotype";
+                margin-left: 10px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+
+            .page {
+                overflow: auto;
+            }
+
+            .first-course-info p {
+                font-weight: 900;
+                font-family: "Book Antiqua";
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .first-course-info {
+                float: left;
+            }
+
+            .second-course-info p {
+                font-family: "Book Antiqua";
+            }
+
+            .second-course-info {
+                overflow: auto;
+            }
+
+            .courses {
+                float: none;
+                margin-left: 30px;
+                displaY: none;
+            }
+
+            .course h2 {
+                margin-left: 10px;
+            }
+
+            .course {
+                background-color: #fff7e6;
+                border: 2px solid #000000;
+                overflow: auto;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+
+            .course p {
+                margin-left: 10px; 
+                margin-right: 10px;
+            }
+
+            .more {
+                background-color: #b999a1;
+                overflow: auto;
+            }
+
+            .more a {
+                float: right;
+                color: #FFFFFF;
+                padding: 10px;
+            }
+
+            .nav-item a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .nav-item a:hover {
+                text-decoration: underline;
+            }
+
+
+            @media all and (min-width: 601px) and (max-width: 900px) {
+                body {
+                    border: 2px solid #000000;
+                }
+
+                .dropdown {
+                    display: none;
+                }
+
+                .logo-div {
+                    display: none;
+                }
+
+                .navbar {
+                    display: block;
+                    background-color: #b999a1;
+                }
+
+                footer {
+                    font-size: 1em;
+                }
+
+                .header-info-wrapper {
+                    display: block;
+                }
+
+                .menu {
+                    border: 4px solid #d4d4d4;
+                    border-radius: 10px;
+                    margin-left: 10px; 
+                    margin-bottom: 30px;
+                    margin-top: 10px;
+                }
+
+                .courses {
+                    display: block;
+                }
+
+                .menu {
+                    overflow: auto;
+                }
+
+                .courses {
+                    float: right;
+                    width: 65%;
+                }
+
+                .second-arrow {
+                    display: none;
+                }
+            }
+
+            @media all and (min-width: 901px) and (max-width: 1000px) {
+                .wrapper {
+                    border: 2px solid #000000;
+                }
+
+                .dropdown {
+                    display: none;
+                }
+
+                .logo-div {
+                    display: block;
+                    float: left;
+                    width: 150px;
+                    margin-bottom: 10px;
+                }
+
+                .logo {
+                    margin-top: 0px;
+                }
+
+                .navbar {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                footer {
+                    font-size: 1em;
+                }
+
+                .header-info-wrapper {
+                    display: block;
+                }
+
+                .menu {
+                    border: 4px solid #d4d4d4;
+                    border-radius: 10px;
+                    margin-left: 10px; 
+                    margin-bottom: 30px;
+                    margin-top: 10px;
+                }
+
+                .courses {
+                    display: block;
+                }
+
+                .menu {
+                    overflow: auto;
+                }
+
+                .courses {
+                    float: right;
+                    width: 70%;
+                }
+
+                .second-arrow {
+                    display: none;
+                }
+
+                .nav-item {
+                    margin-left: 30px;
+                    border: 2px solid #000000;
+                    padding: 10px;
+                    width: 13%;
+                }
+
+                .header-info-wrapper {
+                    border-top: none;
+                }
+
+                .header {
+                    float: left;
+                    border-bottom: none;
+                    width: 40%;
+                }
+
+                .info {
+                    margin-right: 20px;
+                }
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+            <div class="drop-btn">Ajankohtaista<i class="arrow down"></i></div>
+            <div class="drop-content">
+                <a href="#">Opinahjo</a>
+                <a href="#">Kurssit</a>
+                <a href="#">Ota yhteyttä</a>
+                <a href="#">Omat sivut</a>
+            </div>
+        </div>
+
+        <div class="logo-div">
+            <img class="logo" src="opinahjo-logo.png"/>
+        </div>
+
+        <div class="navbar">
+            <div class="nav-item">
+                <a href="#">Ajankohtaista</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Opinahjo</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Kurssit</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Ota yhteyttä</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Omat sivut</a>
+            </div>
+        </div>
+
+        <div class="wrapper">
+        <div class="header-info-wrapper">
+            <div class="header">
+                <h1>
+                    Kurssikeskus Opinahjo
+                </h1>
+                <h3>
+                    "Oppiminen jatkuu läpi elämän"
+                </h3>
+            </div>
+            <div class="info">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare elit erat, a elementum ipsum semper in. Phasellus sodales enim sed felis cursus condimentum. Aliquam nec lorem sed enim varius placerat vitae ac diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus sit amet nisl hendrerit efficitur eu non felis. Sed ac urna hendrerit, dictum velit id, interdum tortor. Sed nec.
+                </p>
+            </div> 
+        </div>
+
+        <div class="page">
+            <div class="courses">
+                <div class="page-header">
+                    <h1>
+                        Tietotekniikka
+                    </h1>
+                </div>
+
+                <div class="course">
+                    <h2>
+                        Tietotekniikan A-ajokortti
+                    </h2>
+                    <div class="first-course-info">
+                        <p>
+                            Aika:
+                        </p>
+                        <p>
+                            Paikka:
+                        </p>
+                        <p>
+                            Opettajat:
+                        </p>
+                    </div>
+
+                    <div class="second-course-info">
+                        <p>
+                            ma klo 17-19 (1.4-1.5.2020)
+                        </p>
+                        <p>
+                            B-rakennus, tietokoneluokka
+                        </p>
+                        <p>
+                            Olli Opettaja
+                        </p>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit risus et nibh consectetur, sit amet molestie urna facilisis. Etiam id urna vehicula, facilisis nisi in, suscipit orci. Mauris.
+                    </p>
+
+                    <div class="more">
+                        <a href="#">Lisätietoja<i class="third-arrow right"></i><i class="third-arrow right"></i></a>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <h2>
+                        Tietotekniikan A-ajokortti
+                    </h2>
+                    <div class="first-course-info">
+                        <p>
+                            Aika:
+                        </p>
+                        <p>
+                            Paikka:
+                        </p>
+                        <p>
+                            Opettajat:
+                        </p>
+                    </div>
+
+                    <div class="second-course-info">
+                        <p>
+                            ma klo 17-19 (1.4-1.5.2020)
+                        </p>
+                        <p>
+                            B-rakennus, tietokoneluokka
+                        </p>
+                        <p>
+                            Olli Opettaja
+                        </p>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit risus et nibh consectetur, sit amet molestie urna facilisis. Etiam id urna vehicula, facilisis nisi in, suscipit orci. Mauris.
+                    </p>
+
+                    <div class="more">
+                        <a href="#">Lisätietoja<i class="third-arrow right"></i><i class="third-arrow right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        <div class="menu">
+            <div class="menu-item">
+                <i class="second-arrow right"></i>
+                <a class="menu-link" href="#">Hyvinvointi ja Terveys</a>
+            </div>
+            <div class="menu-item">
+                <i class="second-arrow right"></i>
+                <a class="menu-link" href="#">ihminen, yhteiskunta ja kulttuuri</a>
+            </div>
+            <div class="menu-item">
+                <i class="second-arrow right"></i>
+                <a class="menu-link" href="#">Kielet</a>
+            </div>
+            <div class="menu-item">
+                <i class="second-arrow right"></i>
+                <a class="menu-link" href="#">Kirjallisuus, teatteri ja äidinkieli</a>
+            </div>
+            <div class="menu-item">
+                <i class="second-arrow right"></i>
+                <a class="menu-link" href="#">Kotitalous</a>
+            </div>
+            <div class="menu-item">
+                <i class="second-arrow right"></i>
+                <a class="menu-link" href="#">Kuvataide</a>
+            </div>
+            <div class="menu-item">
+                <i class="second-arrow right"></i>
+                <a class="menu-link" href="#">Käsityö</a>
+            </div>
+            <div class="menu-item">
+                <i class="second-arrow right"></i>
+                <a class="menu-link" href="#">Liikunta, tanssi ja jooga</a>
+            </div>
+            <div class="menu-item">
+                <i class="second-arrow right"></i>
+                <a class="menu-link" href="#">Luonto, ympäristö ja merenkulku</a>
+            </div>
+            <div class="menu-item">
+                <i class="second-arrow right"></i>
+                <a class="menu-link" href="#">Musiikki</a>
+            </div>
+            <div class="menu-item">
+                <i class="second-arrow right"></i>
+                <a class="menu-link" href="#">Tietotekniikka</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        <footer>
+            <p class="footer-paragraph">
+                ©Kurssikeskus Opinahjo
+            </p>
+        </footer>
+    </body>
+</html>
