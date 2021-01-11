@@ -22,3 +22,23 @@ Tässä on koulussa tekemäni portfolio, alla löytyy linkit tehtävänantoon se
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=322786)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/LESS/Toteutus2)
 ### Javascript ja jQuery
+<b>jQuery-toiminnallisuutta sivustolla<b>
+- [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=325714)
+- [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/Javascript%20ja%20jQuery/jQuery-sivu)
+
+### PHP
+<b>Eka portfolio tehtävä<b>
+- [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=323855)
+- [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/PHP/portfoliotehtava1)
+
+<b>Toinen portfolio tehtävä<b>
+- [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=323856)
+- [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/PHP/portfoliotehtava2)
+### AJAX
+<b>Kommentointisivusto<b>
+- [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=325712)
+- [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/AJAX/kommentointisivusto)
+  
+<b>Chat-huone<b>
+- [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=325713)
+- [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/AJAX/chat-huone)
