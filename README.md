@@ -5,9 +5,11 @@ Tässä on koulussa tekemäni portfolio, alla löytyy linkit tehtävänantoon se
 <b>Eka portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=322777)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/blob/master/HTML/Harjoitus2/Teht%C3%A4v%C3%A42.html)
+  
 <b>Toinen portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=322780)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/blob/master/HTML/Harjoitus5/Teht%C3%A4v%C3%A45.html)
+  
 <b>Kolmas portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=322781)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/blob/master/HTML/Harjoitus6/Teht%C3%A4v%C3%A46.html)
