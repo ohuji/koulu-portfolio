@@ -1,6 +1,7 @@
 # Koulu-portfolio
-Tässä on koulussa tekemäni portfolio, alla löytyy linkit tehtävänantoon sekä tehtävään. Kopion tehtävät toisesta reposta tähän, jossa on kaikki tehtävät eikä vain portfolio eli jos kiinnostaa nähdä commitit tai muut tehtävät niin laita viestiä ja lisään siihen tai laitan julkiseksi.
+Tässä on koulussa tekemäni portfolio. Kopion tehtävät toisesta reposta tähän, jossa on kaikki tehtävät eikä vain portfolio eli jos kiinnostaa nähdä commitit tai muut tehtävät niin laita viestiä ja lisään siihen tai laitan julkiseksi.
 # Tehtävät
+Alla näkyy kaikkiin tehtäviin linkit kuvaukseen ja tehtävään.
 ## HTML
 <b>Eka portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=322777)
@@ -22,10 +23,13 @@ Tässä on koulussa tekemäni portfolio, alla löytyy linkit tehtävänantoon se
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=322786)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/LESS/Toteutus2)
 ## Javascript ja jQuery
+<b>Kuvakaruselli<b>
+- [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=325560)
+- [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/Javascript%20ja%20jQuery/Kuvakaruselli)
+ 
 <b>jQuery-toiminnallisuutta sivustolla<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=325714)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/Javascript%20ja%20jQuery/jQuery-sivu)
-
 ## PHP
 <b>Eka portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=323855)
