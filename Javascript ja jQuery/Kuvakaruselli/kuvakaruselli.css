@@ -1,0 +1,68 @@
+.pic {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    max-width: 700px;
+}
+
+.desc {
+    margin: 10px;
+}
+
+#container {
+    border: 2px solid #000000;
+}
+
+#selectors {
+    background-color: #d4d4d4;
+    border-top: 2px solid #000000;
+    overflow: auto;
+}
+
+#selectors span {
+    padding: 10px;
+    border-right: 2px solid #000000;
+    float: left;
+}
+
+#selectors span:hover {
+    background-color: #808080;
+    cursor: pointer;
+}
+
+#selectors span.active {
+    background-color: #808080;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+#img-slider .picture {
+    display: none;
+}
+
+#img-slider .picture.active {
+    display: block;
+}
+
+#img-slider {
+    overflow: auto;
+}
+
+@media all and (min-width: 700px) {
+    .desc {
+        overflow: auto;
+    }
+
+    .pic {
+        float: left;
+        width: 60%;
+        margin-right: 10px;
+        max-height: auto;
+    }
+
+    .picture {
+        overflow: auto;
+    }
+}
