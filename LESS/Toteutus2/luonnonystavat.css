@@ -194,6 +194,9 @@ nav ul li .submenu a:hover {
   nav {
     background-color: #33cc33;
   }
+  nav ul {
+    display: inline-block;
+  }
   nav ul li {
     float: left;
     padding-left: 21px;
@@ -232,6 +235,9 @@ nav ul li .submenu a:hover {
 @media all and (min-width: 651px) and (max-width: 800px) {
   nav {
     background-color: #33cc33;
+  }
+  nav ul {
+    display: inline-block;
   }
   nav ul li {
     float: left;
@@ -309,6 +315,9 @@ nav ul li .submenu a:hover {
 @media all and (min-width: 801px) and (max-width: 1000px) {
   nav {
     background-color: #33cc33;
+  }
+  nav ul {
+    display: inline-block;
   }
   nav ul li {
     float: left;
@@ -390,6 +399,9 @@ nav ul li .submenu a:hover {
 @media all and (min-width: 1001px) and (max-width: 1200px) {
   nav {
     background-color: #33cc33;
+  }
+  nav ul {
+    display: inline-block;
   }
   nav ul li {
     float: left;
