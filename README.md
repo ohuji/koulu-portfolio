@@ -39,9 +39,9 @@ Alla näkyy kaikkiin tehtäviin linkit kuvaukseen ja tehtävään.
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=323856)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/PHP/portfoliotehtava2)
 - [Linkki testidatan ja tietokannan lataamiseen](https://www.mediafire.com/file/yk9xi9r9rjijhg3/neuvontapalstatestidata.sql/file)
-Testikäyttäjä:
-Käyttäjänimi - matti65
-Salasana - salasana1
+<b>Testikäyttäjä:<b>
+<b>Käyttäjänimi - matti65<b>
+<b>Salasana - salasana1<b>
 ## AJAX
 <b>Kommentointisivusto<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=325712)
