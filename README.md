@@ -41,7 +41,9 @@ Alla näkyy kaikkiin tehtäviin linkit kuvaukseen ja tehtävään.
 - [Linkki testidatan ja tietokannan lataamiseen](https://www.mediafire.com/file/yk9xi9r9rjijhg3/neuvontapalstatestidata.sql/file)
   
 <b>Testikäyttäjä:<b>
+  
 <b>Käyttäjänimi - matti65<b>
+  
 <b>Salasana - salasana1<b>
 ## AJAX
 <b>Kommentointisivusto<b>
