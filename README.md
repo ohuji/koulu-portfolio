@@ -22,7 +22,6 @@ Alla näkyy kaikkiin tehtäviin linkit kuvaukseen ja tehtävään.
 <b>Toinen portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=322786)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/LESS/Toteutus2)
-  <a href="neuvontapalsta (3).sql">testi</a>
 ## Javascript ja jQuery
 <b>Kuvakaruselli<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=325560)
@@ -39,6 +38,7 @@ Alla näkyy kaikkiin tehtäviin linkit kuvaukseen ja tehtävään.
 <b>Toinen portfolio tehtävä<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=323856)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/PHP/portfoliotehtava2)
+- [Linkki testidatan ja tietokannan lataamiseen](https://www.mediafire.com/file/yk9xi9r9rjijhg3/neuvontapalstatestidata.sql/file)
 ## AJAX
 <b>Kommentointisivusto<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=325712)
