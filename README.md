@@ -53,3 +53,4 @@ Alla näkyy kaikkiin tehtäviin linkit kuvaukseen ja tehtävään.
 <b>Chat-huone<b>
 - [Kuvaus](https://moodle.omnia.fi/mod/page/view.php?id=325713)
 - [Tehtävä](https://github.com/ohuji/koulu-portfolio/tree/master/AJAX/chat-huone)
+- [Linkki testidatan ja tietokannan lataamiseen](https://www.mediafire.com/file/nfjs2scwk4bvstp/chattihuonetestidata.sql/file)
